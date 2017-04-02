@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f0e1; 
+  font-size: 1em; 
+  font-family: sans-serif, Arial, Helvetica;
+}
+
+#wrapper {
+  width: 50%; 
+  margin: auto;
+  padding: 10% 0% 40% 0%;
+}
+
+.col a, li { 
+	list-style: none;
+  outline: none; 
+  border: none; 
+  color: #333333; 
+  text-decoration: none;
+  font-size: 0.95em;
+  text-align: right;
+  padding: 0px 0px 5px 0px;
+}
+
+a:hover {
+  color: #00a2db;
+}
+.content li {
+  list-style: initial;
+  text-align: left;
+}
+
+.content li:hover {
+  color: #d96d00;
+}
+
+.content a {
+  color: #00a2db;
+}
+
+.content a:hover {
+  color: #ffffff;
+}
+
+ul {
+	margin-right: 15%;
+}
+
+hr {
+  color: #40b9e4;
+}
+h1 {
+	font-size: 2.0em;
+  color: #4b9624;
+  font-family: 'Roboto Condensed', sans-serif, Arial, Helvetica;
+}
+
+h3 {
+  color: #242424;
+  font-size: 1.5em;
+	text-align: right;
+	margin-right: 15%;
+  font-family: 'Roboto Condensed', sans-serif, Arial, Helvetica;
+}
+
+p {
+	font-size: 0.9em;
+	color: #333333;
+  line-height: 1.5;
+}
+
+
+/* ------MODAL IMAGE START------ */
+
+img {
+  max-width: 100%;
+  height: auto;
+  float: left;
+  margin: 1% 1% 1% 1%;
+}
+
+#myImg8, #myImg9, #myImg10, #myImg13, #myImg14 {
+  max-width: 48%;
+  height: auto;
+}
+
+#myImg1, #myImg3, #myImg4, #myImg5, #myImg6, #myImg7, #myImg8, #myImg9, #myImg10, #myImg11, #myImg12, #myImg13, #myImg14, #myImg15{
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg1:hover, #myImg3:hover, #myImg4:hover, #myImg5:hover, #myImg6:hover, #myImg7:hover, #myImg8:hover, #myImg9:hover, #myImg10:hover, #myImg11:hover, #myImg12:hover, #myImg13:hover, #myImg14:hover, #myImg15:hover {
+  opacity: 0.5;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 70%;
+    height: auto;
+    float: none;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 20px 0;
+    height: 150px;
+    font-family: 'Roboto Condensed', sans-serif, Arial, Helvetica;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ------MODAL IMAGE END------ */
+
+
+
+
+/* Flexbox */
+.flex-grid { 
+  margin: 0 0 10% 0;
+  display: flex;
+  align-items: center;
+  
+}
+
+.col {
+	flex: 1;
+  padding: 0px;
+  border-radius: 1.8em;
+  text-align: left;
+  color: #000000; 
+}
+
+.quarter {
+	flex: none; 
+	width: 25%;
+}
+
+
+
+/* @media Breaks */
+@media (max-width: 700px) {
+  .flex-grid {
+    display: block;
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+    img {
+      width: 100%;
+      float: none;
+    }
+    #myImg8, #myImg9, #myImg10, #myImg13, #myImg14 {
+      max-width: 100%;
+      height: auto;
+}
+}
+
+
+
+
+
+
+
+

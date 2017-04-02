@@ -1,0 +1,379 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Te Papa Challenge Proposal</title>
+  <meta name="description" content="Te Papa Challenge Proposal">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  <link rel="stylesheet" href="css/default.css" type="text/css">
+  <script src="js/scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+  <div id="wrapper">
+    
+    <div class="flex-grid">
+      <div class="col quarter">
+        <ul></br><hr>
+          <li><a href="#challenge" title="Challenge">Challenge</a></li></br>
+          <li><a href="#idea" title="Idea">Idea</a></li></br>
+          <li><a href="#research" title="Research">Research</a></li></br>
+          <li><a href="#inspiration" title="Inspiration">Inspiration</a></li></br>
+          <li><a href="#concepts" title="Concepts">Concepts</a></li></br>
+          <li><a href="#otherThoughts" title="Other Thoughts">Other Thoughts</a></li></br>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h1>Te Papa</h1>
+        <h1>Proposal</h1>
+        <h1>Project 1</h1>
+        <h1>MDDN352</h1>
+        <h1>David</h1>
+        <h1>Fung</h1>
+        </br></br></br></br>
+      </div>
+
+      <img id="tepapa" src="images/tepapa_logo.png" alt="Te Papa Logo">
+
+    </div>
+
+    <hr>
+
+    <div class="flex-grid">
+      <div class="col quarter">
+        <h3>Challenge</h3>
+      </div>
+
+      <div class="col">
+        <div class="content">
+        <p id="challenge">The challenge that Te Papa set out was very broad, but the general idea I got from it was to create a new experience between the user and the collections at the museum that appeals to all audiences and allows more accessibility. These are are the bullets points from a slide by the tutor Julian.</p>
+
+        <ul>
+          <li>Create a mobile media project that responds to Te Papa and the collection through mobile media.</li>
+          <li>How can you provide new types experiences?</li>
+          <li>How can you support specific audiences, older visitors, families, children/youth, cruise passengers?</li>
+          <li>What can mobile media do for accessibility?</li>
+          <li>What new commercial opportunities are there?</li>
+          <li>How can mobile add to existing exhibits?</li>
+        </ul>
+
+        </div>  
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="flex-grid">
+      <div class="col quarter">
+        <h3>Idea</h3>
+      </div>
+
+      <div class="col">
+        <div class="content">
+          <p id="idea">My idea for the Te Papa challenges answers to the needs of accessibility to people such as tourists, casual visitors, families and maybe even children. This will be done through enabling interaction and access of exhibit guides/info through an indoor positioning system which will track and show which area of the museum you are in, and activate relevant info and audio guides based on that area. Being an online mobile experience, photographs or scans of artwork/exhibits can be put in an online gallery for everyone to view. This could be either implemented within the interactive website itself or could be setup on an external social media platform.</p>
+
+          <p>An aspect I would like to incorporate and comes under the category of pathfinding is a heatmap/foot map of the most common paths taken throughout the museum by countless people. This will be definitely helpful for anyone who is not familiar or new to the museum to allow them to explore hotspots based on the information provided in the interactive map on your mobile device. This interactive map also provides useful information to such as elevators, restrooms, stairs and lookouts which makes accessibility and traversing easier.</p>
+
+          <p>Additionally, I would like to add a live video chat or messaging system in my interactive website to give reason for people to talk to each other, ask questions and to generally stray away from a solo experience as you move throughout Te Papa. Due to the flexibility of a mobile phone, exhibits which are under construction or out of order such as the art gallery, those collections can be easily displayed within a webpage to people to see anywhere.</p>
+
+          <ul>
+            <li>Interactive map of Te Papa and its collections</li>
+            <li>Online gallery of artworks/exhibits for everyone to see</li>
+            <li>Pathfinding, allowing users to follow a common path or explore freely on their own</li>
+            <li>Indoor position/navigation system</li>
+            <li>Hotspots/heatmap of most visited exhibit</li>
+            <li>Area activated information and audio guides relevant to the exhibit/collection</li>
+            <li>Possible integration of live video chat or messaging system with other users in Te Papa</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="flex-grid">
+      <div class="col quarter">
+        <h3>Research</h3>
+      </div>
+
+      <div class="col">
+        <div class="content">
+          <p id="research">Based on my idea I’ve made a list of the topics I believe I’d need to cover in order to fully understand the technical aspects of my project and explain them below.</p>
+
+          <ul>
+            <li>Map of Te Papa - extraction of basic layout and exhibit areas and turning it into a web format</li>
+            <li>How to make  an interactive map and implement it effectively (optimized and simple)</li>
+            <li>Exploration of indoor positioning system (IPS); WiFi, Bluetooth or grid system and how it would work on mobile/website integration</li>
+            <li>Area activation based on indoor position of certain art exhibit info/guides/audio; hotspot beacons?</li>
+            <li>Effective visual communication with device to show and track where you are shown on interactive map</li>
+            <li>Using and implementing geolocation API into website</li>
+            <li>Effective pathfinding, consideration of visual elements on map</li>
+            <li>Live video chat or messaging system</li>
+          </ul>
+
+          <p><strong>+ RFID & WiFi</strong></br></br>The possible options for an indoor positioning system is using WiFi, Bluetooth beacons or RFID, however RFID is used for object identification and cannot be used in tracking as well as requiring an expensive reader. With WiFi, the existing structure already inside Te Papa and can be utilized to enable the indoor navigation and area activated info and guides system. This system works without the need to turn on GPS on your phone, can also detect which level you’re on and can have a fairly large range (more WiFi access points placed across Te Papa for extended range and accuracy). However this system can be relatively inaccurate (anywhere from 5 - 15 metres) because or the size of Te Papa and also depending on the hardware used. Setting indoor tracking will either require an app to take measurements from several WiFi access points to determine the strength of the signal, or a server-based client that can handle that instead and won't need an app to work.</p>
+
+          <a href="https://www.infsoft.com/blog-en/articleid/40/indoor-navigation-using-wifi-as-a-positioning-technology" target="_blank">https://www.infsoft.com/blog-en/articleid/40/indoor-navigation-using-wifi-as-a-positioning-technology</a>
+
+          </br>
+          </br>
+
+          <p><strong>+ Bluetooth Beacons</strong></br></br>However with Bluetooth beacons, a greater accuracy can be achieved and can have “Bluetooth Low Energy” technology, meaning longer periods of operating on battery which has been designed with modern day consumers in mind. It works in the same way as the WiFi tracking system, requiring either an app or server-based client to make the measurements. It’s been said that beacons are a technology that is more powerful due to their flexibility because it is able to track in real time and with an accuracy of less than 5 meters.</p>
+
+          <a href="https://www.bluetooth.com/what-is-bluetooth-technology/how-it-works/low-energy" target="_blank">https://www.bluetooth.com/what-is-bluetooth-technology/how-it-works/low-energy</a></br>
+          <a href="https://www.infsoft.com/blog-en/articleid/60/indoor-tracking-using-beacons-or-rfid-what-are-the-differences" target="_blank">https://www.infsoft.com/blog-en/articleid/60/indoor-tracking-using-beacons-or-rfid-what-are-the-differences</a>
+
+          </br>
+          </br>
+
+          <p><strong>+ Ultra-wideband</strong></br></br>Ultra wide-band (UWB) is a technology that can transmit a lot of data through a wide range of frequency bands at very low power, and can be compared to other short distance wireless technology like Bluetooth. What’s useful about ultrawide-band is that it can carry huge amounts of data over a distance of up to 70m using only 0.5milliwatts of power. As well as that, it’ll pass through walls and other obstacles more effectively than with solutions such as WiFi and beacons. Ultra wide-band has two main applications: </p>
+
+          <ul>
+            <li>Applications involving radar, in which the signal penetrates nearby surfaces but reflects surfaces that are farther away, allowing objects to be detected behind walls or other coverings.</li>
+            <li>Voice and data transmission using digital pulses, allowing a very low powered and relatively low cost signal to carry information at very high rates within a restricted range.</li>
+          </ul>
+          <p>With the use of ultra-wideband technology, it is possible to achieve indoor positioning/tracking and allow an accuracy of within centimeters. This accuracy can be used to power the “location activated guides” idea which can allow a person to view information on art or collection pieces within their vicinity.</p>
+
+          <a href="http://whatis.techtarget.com/definition/ultra-wideband" target="_blank">http://whatis.techtarget.com/definition/ultra-wideband</a></br>
+          <a href="https://www.pozyx.io/" target="_blank">https://www.pozyx.io/</a>
+
+          </br>
+          </br>
+
+          <p><strong>+ Interactive map creation tools/information</strong></br></br>OpenFloorPlan is an open source JavaScript library that can be used to manipulate and interact with SVG-based floor plans in HTML5 or NodeJS.</p>
+          <a href="http://openfloorplan.org/" target="_blank">http://openfloorplan.org/</a>
+          <p>OpenLayers is also a JavaScript library which can be used to put a dynamic map into any web page. From the download page it says that it can display map tiles, vector data and markers loaded from any source. Apparently it’s easy to customize and extend with straight-forward CSS to style map controls, and different levels of the API for added functionality.</p>
+          <a href="http://openlayers.org/" target="_blank">http://openlayers.org/</a>
+          <p>FLDraw is a software based solution for creating mobile-friendly dynamic/interactive maps.</p>
+          <a href="http://www.fldraw.com/" target="_blank">http://www.fldraw.com/</a>
+
+          </br>
+          </br>
+
+          <p><strong>+ Real-time chat system</strong></br></br>The reason why I’m looking into a possible chat system is that I thought it would a good way to connect people throughout Te Papa when they are looking at the interactive map. Possible uses would be to ask questions, allow people to meet up in person or just chat anonymously for fun. I’ve only looked into one example as I know this will require a client-server to function, but this guide seems simple enough to implement if I do wish to carry this further.</p>
+          <a href="https://www.codeproject.com/Articles/637657/HTML-Real-Time-Chat-with-Websockets-jQuery-and-Sp" target="_blank">https://www.codeproject.com/Articles/637657/HTML-Real-Time-Chat-with-Websockets-jQuery-and-Sp</a>
+        </div>  
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="flex-grid">
+      <div class="col quarter">
+        <h3>Inspiration</h3>
+      </div>
+
+      <div class="col">
+      <p id="inspiration"></p>
+        <img id="myImg1" src="images/cap2.jpg" alt="The Met Fifth Avenue - http://maps.metmuseum.org/">
+        <img id="myImg3" src="images/cap5.jpg" alt="The Franklin Institute - https://www.fi.edu/interactive-map?field_floor_value=1">
+        <img id="myImg4" src="images/cap6.jpg" alt="Louvre - http://www.louvre.fr/en/plan">
+        <img id="myImg5" src="images/cap7.jpg" alt="Louvre - http://www.louvre.fr/en/plan">
+        <img id="myImg6" src="images/cap8.jpg" alt="Victoria and Albert Museum - http://www.vam.ac.uk/features/digitalmap/#l=1&r=room22">
+        <img id="myImg7" src="images/cap9.jpg" alt="Te Papa Museum - https://www.tepapa.govt.nz/">
+        <img id="myImg8" src="images/cap3.png" alt="National Museum of Natural History - https://naturalhistory.si.edu/visit/museum_map/floor_plans/index.html">
+
+        <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+
+
+
+      <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img1 = document.getElementById('myImg1');
+        var img3 = document.getElementById('myImg3');
+        var img4 = document.getElementById('myImg4');
+        var img5 = document.getElementById('myImg5');
+        var img6 = document.getElementById('myImg6');
+        var img7 = document.getElementById('myImg7');
+        var img8 = document.getElementById('myImg8');
+
+        var modalImg = document.getElementById("img01");
+        var modalImg2 = document.getElementById("img02");
+
+        var captionText = document.getElementById("caption");
+        
+        img1.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img3.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img4.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img5.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img6.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img7.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img8.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+      </script>
+
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="flex-grid">
+      <div class="col quarter">
+        <h3>Concepts</h3>
+      </div>
+
+      <div class="col">
+      <p id="concepts"></p>
+        <img id="myImg9" src="images/concept1.jpg" alt="Concept Sketch 1">
+        <img id="myImg10" src="images/concept2.jpg" alt="Concept Sketch 2">
+        <img id="myImg11" src="images/concept3.jpg" alt="Concept Sketch 3">
+        <img id="myImg12" src="images/concept4.jpg" alt="Concept Sketch 4">
+        <img id="myImg13" src="images/concept5.jpg" alt="Digital Concept 1">
+        <img id="myImg14" src="images/concept6.jpg" alt="Digital Concept 2"> 
+        <img id="myImg15" src="images/concept7.jpg" alt="Digital Concept 3">
+          <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+      </div>
+
+      <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img9 = document.getElementById('myImg9');
+        var img10 = document.getElementById('myImg10');
+        var img11 = document.getElementById('myImg11');
+        var img12 = document.getElementById('myImg12');
+        var img13 = document.getElementById('myImg13');
+        var img14 = document.getElementById('myImg14');
+        var img15 = document.getElementById('myImg15');
+
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+
+        img9.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img10.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img11.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img12.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img13.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img14.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img15.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+            modal.style.display = "none";
+        }
+      </script>
+
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="flex-grid">
+      <div class="col quarter">
+        <h3>Other Thoughts</h3>
+      </div>
+
+      <div class="col">
+        <p id="otherThoughts">This challenge set by Te Papa is broader in terms of their needs/requirements. The Wellington City Council challenge of incorporating beacons in businesses and spreading them around the city can be possibly merged into the museum and allow it to work hand-in-hand as an indoor positioning system. Along with that, it’ll help the visually impaired to navigate the museum, listen and experience audio guides/descriptions of the exhibits and art areas.</p>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  </div>
+  
+</body>
+</html>
